@@ -1,23 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
+      
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
 
-  <h1 class="page-heading">Posts</h1>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.js"></script>
+      <script type="text/javascript" src="taozen.js"> </script>
+      <script src="https://use.fontawesome.com/90cfaf232d.js"></script>
+      <link rel="stylesheet" type="text/css" href="taozen.min.css">
+    <title> Resume Website </title>
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <body id="backgr">
+  <!--BORDER -->
+          <div class="bord" id="left"></div>
+          <div class="bord" id="right"></div>
+          <div id="top"></div>
+          <div class="bord" id="bottom"></div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="container">
+<img class="logo" id="logo" src="logo.png" />
 
-</div>
+<!-- Navbar -->
+
+        <ul class="nav">
+          <li><a class= "navlink about col-sm-4" href="#">About</a></li>
+          <li><a class= "navlink approach col-sm-4" href="#">Approach</a></li>
+          <li><a class= "navlink contact col-sm-4" href="#">Contact</a></li>
+        </ul>
+
+        <div class="divabout">
+          <p class="info inabout col-sm-12"> I'm Reggie, a web developer. </p>
+        </div>
+
+        <div class="divapproach">
+          <p class="info inapproach col-sm-12"> I use code to build experiences. </p>
+        </div>
+
+        <div class="divcontact">
+          <p class="info incontact col-sm-12"> </p>
+          <a href="mailto:tao.rep@gmail.com">
+          <i class="info incontact fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+ </body>
+
+  </html>
